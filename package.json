@@ -1,0 +1,23 @@
+{
+  "name": "viy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development  NODE_OPTIONS=--openssl-legacy-provider node_modules/webpack/bin/webpack.js --progress --watch --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+    "cross-env": "^3.2.3",
+    "css-loader": "^4.2.1",
+    "laravel-mix": "^5.0.5",
+    "style-loader": "^1.2.1",
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^4.44.1"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "vue": "^2.6.14",
+    "vue-router": "^3.0.1"
+  }
+}
